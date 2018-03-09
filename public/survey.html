@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Friend</title>
+  <!-- Bootstrap itself -->
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome CDN-->
+  <script src="https://use.fontawesome.com/c38831e163.js"></script>
+  <!-- Fonts -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+
+  <script>
+      $(document).ready(function() {
+        $('.modal').modal();
+      });
+    </script>
+  
+  <head>
+
+<body class="theme-invert" style="background:yellow">
+  <nav class="mainmenu" style="background-color: yellow">
+    <div class="container">
+      <div class="dropdown">
+        <button type="button" class="navbar-toggle" data-toggle="dropdown">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li>
+            <a class="dropIgnore" href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main section -->
+  <section class="form group" id="head">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+          <h2 class="subtitle" id="surveyTitle" style="letter-spacing: .3em; font-size: 5em">Questionnaire</h2>
+          <h3 class="tagline"></h3>
+        </div>
+        <!-- Question FORM - 10 QUESTIONS -->
+        <form id="surveyForm">
+          <div class="row">
+            <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2 col-lg-8 col-xs-offset-1 col-sm-offset-2 text-center questions">
+              <div class="form-group">
+                <label id="inputNameLabel" for="exampleInputEmail1">FIRST & LAST NAME</label>
+                <input type="text" class="form-control text-center" id="q1" placeholder="enter your first and last name"
+                  name="select11">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2 col-lg-8 col-xs-offset-1  col-sm-offset-2 text-center questions">
+              <div class="form-group">
+                <label id="inputPhotoLabel" for="exampleInputEmail1">PHOTO</label>
+                <input type="url" class="form-control text-center inputPhoto" id="q2" placeholder="no photo"
+                  name="select12">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1">
+            <hr class="style12">
+          </div>
+          <div class="row firstQuestion">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 1</b>
+              </h2>
+              <h3 class="answer">You have never tried online dating</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q3"
+                name="select1">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 2</b>
+              </h2>
+              <h3 class="answer">You get nervous a lot on the first date that it shows</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q4"
+                name="select2">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 3</b>
+              </h2>
+              <h3 class="answer">Your friends have tried to convince you to join a dating site.</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q5"
+                name="select3">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 4</b>
+              </h2>
+              <h3 class="answer">You do not believe in blind dates.</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q6"
+                name="select4">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 5</b>
+              </h2>
+              <h3 class="answer">You would most likely research your date before agreeing to meet-up.</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q7"
+                name="select5">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 6</b>
+              </h2>
+              <h3 class="answer">In a discussion, you speak your mind sometimes hurting the other person's feelings</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q8"
+                name="select6">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 7</b>
+              </h2>
+              <h3 class="answer">You do not give up easily in an argument</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q9"
+                name="select7">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 8</b>
+              </h2>
+              <h3 class="answer">You talk a lot but get turned off easily if your date talk too much.</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q10"
+                name="select8">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 9</b>
+              </h2>
+              <h3 class="answer">You prefer driving yourself to meet a new date.</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q11"
+                name="select9">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center questions">
+              <h2 class="question">
+                <b>Question 10</b>
+              </h2>
+              <h3 class="answer">You would rather go to a dinner and movie than clubbing</h3>
+              <select data-placeholder="SELECT A RESPONSE" class="question" id="q12"
+                name="select10">
+                <option value="" class="optionText"></option>
+                <option value="1" class="optionText">1 (Strongly Disagree)</option>
+                <option value="2" class="optionText">2</option>
+                <option value="3" class="optionText">3</option>
+                <option value="4" class="optionText">4</option>
+                <option value="5" class="optionText">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xs-offset-3 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="surveySubmit">
+              <i class="fa fa-check-circle" aria-hidden="true"></i> SUBMIT</button>
+          </div>
+        </form>
+      </div>
+  </section>
+    <!-- Modal -->
+    <div id="resultsModal" class="modal">
+        <div class="modal-content">
+          <h4>you found your friend</h4>
+          <h5 id="userMatch"></h5>
+          <img id="userMatchImage" class="btn btn-default" width="650" src="">
+        </div>
+        <div class="modal-footer">
+          <a href="/survey" class="btn btn-default">start over</a>
+        </div>
+    </div>
+    <!-- Script for capturing and POST form data -->
+    <script type="text/javascript">
+      $("#submit").on("click", function(event) {
+        event.preventDefault();
+        var userScoresArray = [];
+        $(".question option:selected").each(function(){
+          userScoresArray.push(parseInt($(this).val()));
+        });
+        var userProfile = {
+          name: $("#name").val().trim(),
+          photo: $("#photo").val(),
+          scores: userScoresArray
+        };
+        $.post("/api/friend", userProfile).then(function(data) {
+          console.log("Data: " + data);
+          $("#userMatch").text(data.matchName);
+          $("#userMatchImage").attr("src", data.matchPhoto);
+        });
+        $('#resultsModal').modal('open');
+      });
+    </script> 
+</body>
+</html>
